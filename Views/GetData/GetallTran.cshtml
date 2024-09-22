@@ -1,0 +1,32 @@
+﻿@model List<Trainee>
+
+<h class="center"> Trainee	</h>
+
+<table class="table table-bordered table-hover">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Department </th>
+		<th>Adress </th>
+		<th>Image </th>
+	</tr>
+	@foreach (var trainee in Model)
+	{
+
+
+		<tr>
+
+			<td> @trainee.Id </td>
+			<td>@trainee.Name</td>
+			<td>@trainee.Department.Id</td>
+			<td>@trainee.Address</td>
+		
+
+		</tr>
+
+	}
+
+
+
+
+</table>
